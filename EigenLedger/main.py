@@ -1,3 +1,4 @@
+# Edit YF data + Returns Function + append error
 import numpy as np
 import pandas as pd
 import datetime as dt
