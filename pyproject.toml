@@ -2,10 +2,10 @@
 name = "EigenLedger"
 authors = ["Santosh <santoshpassoubadyp@gmail.com>"]
 version = "2.1.6"
-description = "An Open Source Portfolio Management Framework for Everyone 投资组合管理"
+description = "EigenLedger + PMS Feature"
 readme = "README.md"
 license = "LICENSE"
-homepage = "https://github.com/ssantoshp/EigenLedger"
+homepage = "https://github.com/chaipat-ncm/EigenLedger-CW"
 
 [tool.poetry.dependencies]
 python = ">=3.0"
