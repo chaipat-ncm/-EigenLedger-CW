@@ -512,7 +512,7 @@ def portfolio_analysis(my_portfolio, rf=0.0, sigma_value=1, confidence_value=0.9
         del my_portfolio.portfolio[i]
 
     if not report:
-      qs.plots.returns(returns, benchmark, cumulative=True)
+      qs.plots.returns(returns, benchmark)
       qs.plots.yearly_returns(returns, benchmark),
       qs.plots.monthly_heatmap(returns, benchmark)
       qs.plots.drawdown(returns)
@@ -523,7 +523,7 @@ def portfolio_analysis(my_portfolio, rf=0.0, sigma_value=1, confidence_value=0.9
       graph_opt(my_portfolio.portfolio, wts, pie_size=7, font_size=14)
 
     else:
-      qs.plots.returns(returns, benchmark, cumulative=True, savefig="retbench.png")
+      qs.plots.returns(returns, benchmark, savefig="retbench.png")
       qs.plots.yearly_returns(returns, benchmark, savefig="y_returns.png"),
       qs.plots.monthly_heatmap(returns, benchmark, savefig="heatmap.png")
       qs.plots.drawdown(returns, savefig="drawdown.png")
